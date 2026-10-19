@@ -1,0 +1,120 @@
+/* Fluid spacing keeps content readable from compact phones to wide monitors. */
+:root { --page-gutter: max(clamp(16px,4vw,64px),env(safe-area-inset-left),env(safe-area-inset-right)); }
+body { min-width: 280px; }
+.container { width: min(1440px,calc(100% - 2 * var(--page-gutter))); }
+:is(.hero-copy,.hero-grid > *,.about-grid > *,.contact-grid > *,.section-heading > *,.form-row > *,.expertise-item,.project-info) { min-width: 0; }
+:is(h2,h3,h4,p,.tech-tags,.expertise-tags,.case-summary,.case-features,.contact-email,.training-provider,.architecture-steps) { overflow-wrap: anywhere; }
+img { max-width: 100%; }
+.hero-description,.about-copy > p,.case-summary { max-width: 65ch; }
+.hero-description,.project-info > p,.highlight-card > p,.about-copy > p:not(.eyebrow),.training-card p { font-size: clamp(13px,.9vw,15px); }
+.hero-scene-frame { height: clamp(420px,35vw,550px); }
+.dialog-panel { max-height: calc(100dvh - 32px); overflow-y: auto; overscroll-behavior: contain; }
+.case-dialog { width: min(920px,calc(100% - 32px)); }
+.contact-email > a { overflow-wrap: anywhere; }
+.project-filters button,.nav-link,.nav-contact,.mobile-menu-button,.project-github,.scene-motion-toggle,.media-toolbar button,.certificate-trigger,.contact-email > button { min-height: 44px; }
+.mobile-menu-button,.contact-email > button,.project-github { min-width: 44px; }
+.project-github { width: 44px; height: 44px; }
+.background-motion-toggle { bottom: max(14px,env(safe-area-inset-bottom)); right: max(14px,env(safe-area-inset-right)); min-height: 40px; }
+.site-footer { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
+.no-script-note { margin: 20px; padding: 20px; color: var(--beige); text-align: center; line-height: 1.8; }
+.no-script-note a { text-decoration: underline; }
+@media (min-width: 1600px) {
+ .hero-grid { gap: 72px; }
+ h1.intro-heading { font-size: 86px; }
+ .section { padding-block: 120px; }
+ .project-visual { height: 310px; }
+ .project-info { padding: 32px; }
+ .project-github { bottom: 30px; right: 30px; }
+ .highlight-media { height: 390px; }
+ .about-avatar { width: 280px; height: 350px; }
+}
+@media (max-width: 1000px) {
+ .desktop-nav { display: none; }
+ .mobile-menu-button { display: inline-flex; align-items: center; justify-content: center; }
+ .nav-contact { margin-left: auto; margin-right: 12px; }
+ .hero-grid { grid-template-columns: minmax(0,1fr); gap: 36px; }
+ .hero-copy { max-width: 720px; }
+ .hero-scene-frame { max-width: 640px; width: 100%; height: clamp(380px,62vw,510px); margin-inline: auto; }
+ h1.intro-heading { font-size: clamp(40px,8vw,74px); }
+ .about-grid,.contact-grid { grid-template-columns: minmax(0,1fr); gap: 40px; }
+ .about-identity { flex-direction: row; align-items: end; }
+ .about-avatar { width: 250px; height: 310px; }
+ .contact-form { max-width: none; width: 100%; }
+ .journey-panel { width: 100%; }
+}
+@media (max-width: 900px) {
+ .project-stop { width: calc(100% - 54px); align-self: flex-end; }
+ .project-stop + .project-stop { margin-top: 30px; }
+ .project-waypoint,.project-stop:nth-child(even) .project-waypoint { left: -51px; right: auto; width: 30px; height: 30px; }
+ .project-visual { height: clamp(230px,42vw,350px); }
+ .project-toolbar { align-items: start; }
+ .results-count { display: none; }
+ .section-heading { flex-wrap: wrap; gap: 22px; }
+ .section-description { max-width: 50ch; }
+}
+@media (max-width: 600px) {
+ .highlights-grid,.proficiency-grid { grid-template-columns: minmax(0,1fr); }
+ .form-row { grid-template-columns: minmax(0,1fr); }
+ .hero { padding-top: 100px; }
+ h1.intro-heading { font-size: clamp(32px,10.2vw,61px); }
+ h2,.about-copy h2 { font-size: clamp(28px,7.4vw,38px); }
+ .contact-copy h2 { font-size: clamp(38px,11vw,55px); }
+ .about-identity { flex-direction: column; align-items: start; }
+ .about-avatar { width: min(100%,360px); height: clamp(290px,92vw,380px); }
+ .hero-bottom { flex-wrap: wrap; }
+ .hero-bottom > span { line-height: 2.2; }
+ .hero-scene-frame { height: clamp(340px,100vw,460px); }
+ .scene-footer { flex-wrap: wrap; gap: 8px; padding-top: 10px; }
+ .scene-canvas { bottom: 62px; }
+ .project-info { padding: 22px 18px; }
+ .project-info > p { min-height: 0; }
+ .project-github { right: 15px; bottom: 20px; }
+ .project-info .case-study-link { max-width: calc(100% - 45px); min-height: 44px; padding: 8px 10px; line-height: 1.5; }
+ .preview-number { max-width: calc(100% - 34px); white-space: normal; line-height: 1.7; left: 17px; }
+ .preview-disclaimer { left: 17px; }
+ .project-open { right: 13px; }
+ .education-stop .training-card { padding: 24px 20px; }
+ .training-card h3 { font-size: 20px; }
+ .proficiency-card { padding: 24px 20px; }
+ .proficiency-heading h3 { font-size: 26px; }
+ .contact-form { padding: 25px 20px; }
+ .contact-form input,.contact-form textarea { font-size: 16px; min-width: 0; }
+ .form-bottom { flex-wrap: wrap; gap: 14px; }
+ .media-toolbar { flex-wrap: wrap; }
+ .background-motion-toggle { width: 44px; padding: 0; justify-content: center; }
+ .background-motion-toggle > span { display: none; }
+ .case-columns { grid-template-columns: minmax(0,1fr); }
+ .case-title { font-size: clamp(27px,8vw,38px); }
+ .case-links { flex-wrap: wrap; }
+}
+@media (max-width: 359px) {
+ .wordmark-caption { display: none; }
+ .wordmark { gap: 7px; font-size: 10px; }
+ .header-avatar { width: 36px; height: 36px; }
+ .nav-contact { min-width: 63px; margin-right: 7px; padding-inline: 8px; }
+ .hero-actions { flex-direction: column; align-items: stretch; }
+ .hero-intro { font-size: 6px; letter-spacing: .03em; }
+ .hero-stats { gap: 7px; }
+ .hero-stats .rolling-number,.stat-location { font-size: 23px; }
+ .hero-stats > * > span:last-child { font-size: 8px; }
+ .hero-location { width: 100%; }
+ .highlight-card { padding: 23px 18px; }
+ .highlight-media { margin-inline: -18px; height: 240px; }
+ .project-info .case-study-link { font-size: 9px; }
+ .project-info h3 { font-size: 23px; }
+ .training-card h3 { font-size: 18px; }
+ .journey-panel { padding: 24px 20px; }
+ .section-index { margin-right: 7px; }
+ .eyebrow { letter-spacing: .045em; }
+ .hero-bottom .separator { margin-inline: 3px; }
+}
+@media (hover: none), (pointer: coarse) {
+ .project-open { opacity: 1; transform: none; }
+ .background-motion-toggle { min-height: 44px; }
+ .project-card { transform: none !important; }
+}
+@media (max-height: 500px) and (orientation: landscape) {
+ .hero { padding-top: 95px; }
+ .mobile-nav-dialog { padding: 22px; }
+ .mobile-nav-link { font-size: 18px; padding-block: 11px; }
+}
