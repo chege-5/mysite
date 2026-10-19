@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fairgrid",
+    "src": "/images/projects/fairgrid.webp",
+    "author": "Chris Lawton",
+    "alt": "Electricity transmission lines at sunset",
+    "source": "https://unsplash.com/photos/transmission-tower-during-golden-hour-YQrbMEKrlbU",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "id": "vulnnexus",
+    "src": "/images/projects/vulnnexus.webp",
+    "author": "Kevin Ache",
+    "alt": "Server infrastructure in a data center",
+    "source": "https://unsplash.com/photos/a-rack-of-servers-in-a-server-room-2JJ3wBHu4_0",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "id": "hashx",
+    "src": "/images/projects/hashx.webp",
+    "author": "Rob Wingate",
+    "alt": "Source code on a computer monitor",
+    "source": "https://unsplash.com/photos/code-is-displayed-on-a-computer-monitor-zUrEj_OwLQM",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "id": "sentinelx",
+    "src": "/images/projects/sentinelx.webp",
+    "author": "Claudio Schwarz",
+    "alt": "Ethernet connections and network infrastructure",
+    "source": "https://unsplash.com/photos/ethernet-cable-w0aMCZIW6Qc",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "id": "transwest",
+    "src": "/images/projects/transwest.webp",
+    "author": "Markus Spiske",
+    "alt": "Business buildings viewed from below",
+    "source": "https://unsplash.com/photos/low-angle-photography-of-high-rise-buildings-M6QVOPp9gHQ",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "id": "kodisha",
+    "src": "/images/projects/kodisha.webp",
+    "author": "Timon Reinhard",
+    "alt": "Modern apartment building with balconies",
+    "source": "https://unsplash.com/photos/exterior-of-a-modern-apartment-building-with-balconies-VxVldSjtmQI",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "id": "summai",
+    "src": "/images/projects/summai.webp",
+    "author": "Yen Vu",
+    "alt": "Notebook, laptop and study materials on a desk",
+    "source": "https://unsplash.com/photos/desk-with-open-book-laptop-and-study-materials-HNjWq8WPyoY",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "id": "tutor-ai",
+    "src": "/images/projects/tutor-ai.webp",
+    "author": "Jamie Taylor",
+    "alt": "Library shelves filled with books",
+    "source": "https://unsplash.com/photos/books-organized-in-a-shelf--9C3TMXwQjQ",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "id": "mastered-seed",
+    "src": "/images/projects/mastered-seed.webp",
+    "author": "Laura Oliveira",
+    "alt": "Automotive engine and components",
+    "source": "https://unsplash.com/photos/close-up-view-of-a-car-engine-compartment-k0HQnRcyEW0",
+    "license": "https://unsplash.com/license"
+  }
+]
