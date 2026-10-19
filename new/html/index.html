@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kihara Jimmy Chege - Software Engineer &amp; Cybersecurity Specialist</title>
+  <meta name="description" content="Kihara Jimmy Chege — full-stack engineer building secure, resilient systems across web, API, and infrastructure.">
+  <meta property="og:title" content="Kihara Jimmy Chege - Software Engineer &amp; Cybersecurity Specialist">
+  <meta property="og:description" content="Personal portfolio of Kihara Chege - software engineer focused on full-stack systems, cybersecurity, secure APIs and modern infrastructure.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jimmysite.me">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kihara Jimmy Chege - Software Engineer &amp; Cybersecurity Specialist">
+  <meta name="twitter:description" content="Personal portfolio of Kihara Chege - software engineer focused on full-stack systems, cybersecurity, secure APIs and modern infrastructure.">
+  <meta name="canonical" content="https://jimmysite.me">
+  <meta property="og:image" content="https://jimmysite.me/og-image.png">
+  <meta name="twitter:image" content="https://jimmysite.me/twitter-card.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <noscript>
+    <style>
+      .animate-bounce, .animate-ping, .animate-pulse-glow, .animate-fade-in-up, .animate-scan, .animate-cursor-pulse { animation: none !important; }
+      #root::before { content: 'Loading...'; display: flex; align-items: center; justify-content: center; height: 100vh; color: #00ff88; font-family: monospace; }
+    </style>
+  </noscript>
+</head>
+<body>
+  <div id="root"></div>
+  <a href="#main-content" class="skip-link" id="skipLink">Skip to main content</a>
+
+  <!-- Custom Cursor -->
+  <div id="cursor" class="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Navbar -->
+  <div id="scrollProgress" class="scroll-progress" aria-hidden="true">
+    <div id="progressBar" class="progress-bar"></div>
+  </div>
+  <header id="navbar" class="navbar">
+    <nav class="navbar-inner glass" aria-label="Primary">
+      <a href="#home" id="navHome" class="nav-brand">
+        <span class="nav-logo">JC</span>
+        <span class="nav-brand-text">Jimmy Chege</span>
+      </a>
+      <ul class="nav-links" role="menubar">
+        <li role="none"><button class="nav-link active" data-section="home" role="menuitem" aria-current="true">Home</button></li>
+        <li role="none"><button class="nav-link" data-section="about" role="menuitem">About</button></li>
+        <li role="none"><button class="nav-link" data-section="projects" role="menuitem">Projects</button></li>
+        <li role="none"><button class="nav-link" data-section="skills" role="menuitem">Skills</button></li>
+        <li role="none"><button class="nav-link" data-section="security" role="menuitem">Security</button></li>
+        <li role="none"><button class="nav-link" data-section="certifications" role="menuitem">Certifications</button></li>
+        <li role="none"><button class="nav-link" data-section="cv" role="menuitem">CV</button></li>
+        <li role="none"><button class="nav-link" data-section="contact" role="menuitem">Contact</button></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://github.com/chege-5" target="_blank" rel="noreferrer" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg><span class="sr-only">GitHub</span></a>
+        <a href="https://linkedin.com/in/kihara-chege" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><span class="sr-only">LinkedIn</span></a>
+      </div>
+      <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Dialog -->
+  <div id="mobileMenu" class="dialog-overlay" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <h2 class="dialog-title">Menu</h2>
+        <button class="dialog-close" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="dialog-menu">
+        <li><button class="mobile-nav-link" data-section="home">Home</button></li>
+        <li><button class="mobile-nav-link" data-section="about">About</button></li>
+        <li><button class="mobile-nav-link" data-section="projects">Projects</button></li>
+        <li><button class="mobile-nav-link" data-section="skills">Skills</button></li>
+        <li><button class="mobile-nav-link" data-section="security">Security</button></li>
+        <li><button class="mobile-nav-link" data-section="certifications">Certifications</button></li>
+        <li><button class="mobile-nav-link" data-section="cv">CV</button></li>
+        <li><button class="mobile-nav-link" data-section="contact">Contact</button></li>
+      </ul>
+      <div class="dialog-footer"><button class="btn btn-outline btn-sm dialog-close-btn">Close</button></div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-bg-grid technical-grid"></div>
+      <div class="hero-bg-scanline scanline"></div>
+      <div class="hero-scene" id="heroScene" aria-hidden="true">
+        <svg viewBox="0 0 800 600" class="hero-scene-svg">
+          <circle cx="400" cy="300" r="180" fill="none" stroke="rgba(0,255,136,0.06)" stroke-width="1"/>
+          <circle cx="400" cy="300" r="120" fill="none" stroke="rgba(0,255,136,0.04)" stroke-width="1"/>
+          <circle cx="400" cy="300" r="60" fill="none" stroke="rgba(0,255,136,0.03)" stroke-width="1"/>
+          <line x1="200" y1="300" x2="600" y2="300" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+          <line x1="400" y1="100" x2="400" y2="500" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+          <circle cx="400" cy="300" r="4" fill="rgba(0,255,136,0.15)">
+            <animate attributeName="r" values="4;8;4" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.15;0.4;0.15" dur="3s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="relative flex h-2 w-2">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-green opacity-60"></span>
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-green"></span>
+          </span>
+          <span class="availability-label">Available for opportunities</span>
+          <span class="availability-status">Open</span>
+        </div>
+        <h1 class="hero-title">Kihara Jimmy Chege</h1>
+        <div class="hero-typed-container">
+          <span id="typedText" class="hero-typed"></span>
+          <span class="hero-cursor" aria-hidden="true"></span>
+        </div>
+        <p class="hero-desc">Full-stack engineer focused on systems that resist failure — and security that is designed in, not bolted on.</p>
+        <p class="hero-location">Nairobi, Kenya · Software Engineer &amp; Cybersecurity Specialist</p>
+        <div class="hero-cta">
+          <a href="https://github.com/chege-5" target="_blank" rel="noreferrer" class="btn btn-default btn-lg"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+          <a href="https://linkedin.com/in/kihara-chege" target="_blank" rel="noreferrer" class="btn btn-outline btn-lg"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a>
+          <a href="https://jimmysite.me" target="_blank" rel="noreferrer" class="btn btn-orange btn-lg">Visit Site</a>
+        </div>
+        <div class="hero-cta-secondary">
+          <a href="cv.html" download class="btn btn-outline btn-default"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download CV</a>
+          <a href="#contact" class="btn btn-ghost btn-default"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Contact</a>
+        </div>
+        <div class="hero-scroll">
+          <a href="#about" aria-label="Scroll to about"><svg class="icon animate-bounce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg></a>
+          <span>Scroll</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="section-inner">
+        <div class="about-grid">
+          <div class="about-portrait reveal" data-reveal="left">
+            <div class="portrait-container">
+              <div class="portrait-glow"></div>
+              <div class="portrait-visual">
+                <svg viewBox="0 0 200 200" class="w-full h-full" aria-label="Abstract developer visual">
+                  <defs><linearGradient id="portraitGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00FF88" stop-opacity="0.25"/><stop offset="100%" stop-color="#FF7A18" stop-opacity="0.15"/></linearGradient></defs>
+                  <rect width="200" height="200" fill="url(#portraitGrad)"/>
+                  <circle cx="100" cy="80" r="38" fill="none" stroke="#00FF88" stroke-width="2" opacity="0.7"/>
+                  <path d="M55 165c0-35 20-55 45-55s45 20 45 55" fill="none" stroke="#00FF88" stroke-width="2" opacity="0.7"/>
+                  <circle cx="160" cy="50" r="12" fill="#FF7A18" opacity="0.5"/>
+                  <circle cx="40" cy="140" r="8" fill="#00D66F" opacity="0.4"/>
+                  <rect x="25" y="35" width="10" height="10" rx="2" fill="#22C55E" opacity="0.4"/>
+                  <rect x="170" y="150" width="14" height="14" rx="2" fill="#FF7A18" opacity="0.3"/>
+                  <text x="100" y="190" text-anchor="middle" fill="#94A39A" font-size="10" font-family="monospace">DEV / SECURITY</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="about-content" id="aboutContent">
+            <span class="section-label">About / Profile</span>
+            <h2 class="section-title">Engineering with an adversarial mindset.</h2>
+            <p class="text-fg-muted leading-relaxed mb-6">I am a software engineering student at Zetech University with a deep curiosity for how systems are built, why they fail, and how they can be attacked. My work sits at the intersection of software engineering, cybersecurity, and AI-assisted development.</p>
+            <p class="text-fg-subtle leading-relaxed mb-8">I do not just build applications; I think about authentication, authorization, secure configuration, API design, and the layers that stand between a system and its adversaries. I treat debugging as investigation and architecture as defense in depth.</p>
+            <ul class="about-highlights">
+              <li class="about-highlight"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span>Practical full-stack development</span></li>
+              <li class="about-highlight"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Security-first mindset</span></li>
+              <li class="about-highlight"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/></svg><span>AI-assisted engineering</span></li>
+              <li class="about-highlight"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg><span>Debugging and systems thinking</span></li>
+              <li class="about-highlight"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><span>Continuous learning</span></li>
+              <li class="about-highlight"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><span>Building real systems</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section id="overview" class="section overview">
+      <div class="section-inner">
+        <div class="overview-grid">
+          <div class="overview-left">
+            <span class="section-label" data-reveal="up">01 / Overview</span>
+            <h2 class="section-title"><span class="text-reveal" data-text="Systems">Systems</span> <span class="text-reveal" data-text="&amp;">&#38;</span> <span class="text-reveal" data-text="Strategy">Strategy</span></h2>
+            <p class="text-xl sm:text-2xl text-fg leading-snug mt-6">Building the foundations of secure digital products.</p>
+            <p class="text-fg-muted leading-relaxed mt-6">I specialize in architecting highly scalable, fault-tolerant systems where top-tier performance intersects with uncompromising security. By combining full-stack engineering with security-focused thinking, I build digital infrastructure designed for resilience, maintainability, and performance.</p>
+            <p class="text-fg-subtle leading-relaxed mt-4">My methodology relies on clean architecture, rigorous testing, structured debugging, documentation, and proactive vulnerability modeling.</p>
+          </div>
+          <div class="overview-right">
+            <div class="stagger-container">
+              <article class="capability-card reveal" data-reveal="up" data-stagger="0">
+                <div class="capability-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+                <h3 class="text-base font-semibold text-fg">Scalable Design</h3>
+                <p class="text-sm text-fg-subtle mt-1 leading-relaxed">Fault-tolerant architecture that grows with demand.</p>
+              </article>
+              <article class="capability-card reveal" data-reveal="up" data-stagger="1">
+                <div class="capability-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                <h3 class="text-base font-semibold text-fg">Threat Mitigation</h3>
+                <p class="text-sm text-fg-subtle mt-1 leading-relaxed">Security modeled from the first diagram.</p>
+              </article>
+              <article class="capability-card reveal" data-reveal="up" data-stagger="2">
+                <div class="capability-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                <h3 class="text-base font-semibold text-fg">Full-Stack Engineering</h3>
+                <p class="text-sm text-fg-subtle mt-1 leading-relaxed">End-to-end systems across frontend, API and data.</p>
+              </article>
+            </div>
+            <div class="glass-card status-card reveal" data-reveal="scale" data-stagger="0.4">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="h-2 w-2 rounded-full bg-green animate-pulse"></span>
+                <span class="text-xs font-mono text-green tracking-wider">SYSTEM.STATUS</span>
+              </div>
+              <p class="text-sm text-fg-muted leading-relaxed">Every system I ship is designed with observability, failover, and upgrade paths in mind — so the infrastructure outlives any single release.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competencies -->
+    <section id="competencies" class="section competencies">
+      <div class="section-inner">
+        <div id="competenciesContent">
+          <span class="section-label" data-reveal="up">02 / Competencies</span>
+          <h2 class="section-title" data-reveal="up">Core engineering capabilities.</h2>
+          <p class="text-fg-muted max-w-2xl mt-3" data-reveal="up">A decade of focused practice distilled into the skills I rely on daily — from backend systems to secure frontend architecture.</p>
+          <p class="text-xs text-fg-subtle max-w-lg mt-3" data-reveal="up">These percentages are presentation indicators of proficiency, not formal industry measurements.</p>
+        </div>
+        <div class="competencies-grid" id="progressRings">
+          <!-- Generated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Security -->
+    <section id="security" class="section security">
+      <div class="section-inner">
+        <div id="securityContent">
+          <span class="section-label" data-reveal="up">03 / Security Lab</span>
+          <h2 class="section-title">Engineering with an adversarial mindset.</h2>
+          <p class="text-fg-muted max-w-3xl leading-relaxed mt-6 mb-10">Software should not only work under expected conditions — it should survive unexpected and malicious inputs. Security is not an afterthought; it is a design constraint woven into architecture, code, and review.</p>
+        </div>
+        <div class="security-grid">
+          <div class="security-diagram-card reveal" data-reveal="left" data-stagger="0.1">
+            <div class="glass-card rounded-3xl p-6 sm:p-8">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-sm font-mono text-green tracking-wider">ATTACK_SURFACE.DEFENSE_LAYERS</h3>
+                <span class="text-[10px] text-fg-subtle font-mono">v1.2</span>
+              </div>
+              <svg viewBox="0 0 360 250" class="w-full h-auto" aria-label="Security attack and defense layers">
+                <defs><linearGradient id="attackGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#FF7A18" stop-opacity="0"/><stop offset="50%" stop-color="#FF7A18" stop-opacity="0.8"/><stop offset="100%" stop-color="#FF7A18" stop-opacity="0"/></linearGradient></defs>
+                <line x1="50" y1="30" x2="50" y2="210" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                <line x1="20" y1="30" x2="340" y2="30" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                <line x1="20" y1="210" x2="340" y2="210" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                <g id="defenseDots"></g>
+                <g id="attackDots"></g>
+                <g id="attackLines"></g>
+                <g id="defenseLines"></g>
+              </svg>
+              <p class="text-xs text-fg-subtle mt-4 text-center">Attack path through an application, surrounded by defensive layers.</p>
+            </div>
+          </div>
+          <div class="security-defenses">
+            <article class="defense-item reveal" data-reveal="right" data-stagger="0.05">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <h4 class="text-sm font-semibold text-fg">Authentication</h4>
+              <p class="text-xs text-fg-subtle mt-1">Strong, verifiable identity and session control.</p>
+            </article>
+            <article class="defense-item reveal" data-reveal="right" data-stagger="0.1">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+              <h4 class="text-sm font-semibold text-fg">Authorization / RBAC</h4>
+              <p class="text-xs text-fg-subtle mt-1">Least-privilege access for every role.</p>
+            </article>
+            <article class="defense-item reveal" data-reveal="right" data-stagger="0.15">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <h4 class="text-sm font-semibold text-fg">TLS / HTTPS</h4>
+              <p class="text-xs text-fg-subtle mt-1">Encrypted transport everywhere.</p>
+            </article>
+            <article class="defense-item reveal" data-reveal="right" data-stagger="0.2">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <h4 class="text-sm font-semibold text-fg">Input Validation</h4>
+              <p class="text-xs text-fg-subtle mt-1">Never trust the client.</p>
+            </article>
+            <article class="defense-item reveal" data-reveal="right" data-stagger="0.25">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-8"/></svg>
+              <h4 class="text-sm font-semibold text-fg">SAST / DAST</h4>
+              <p class="text-xs text-fg-subtle mt-1">Static and dynamic security testing.</p>
+            </article>
+            <article class="defense-item reveal" data-reveal="right" data-stagger="0.3">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <h4 class="text-sm font-semibold text-fg">Monitoring</h4>
+              <p class="text-xs text-fg-subtle mt-1">Detect anomalies before they become breaches.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-label">05 / Projects</span>
+          <h2 class="section-title">Case studies</h2>
+          <p class="text-fg-subtle max-w-2xl mt-3">A selection of systems I have built, spanning security, finance, enterprise software, and data automation.</p>
+        </div>
+        <ul class="projects-list" role="list" aria-label="Project case studies" id="projectsList">
+          <!-- Generated by JS -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 class="section-title">Technology Universe</h2>
+          <p class="text-fg-subtle max-w-2xl mt-3">Explore the stack I use to build, connect, and secure modern systems.</p>
+        </div>
+        <div class="skills-grid">
+          <div id="skillsVisual" class="skills-visual">
+            <div class="skills-visual-inner">
+              <div id="techScene" class="tech-scene"></div>
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,var(--color-bg)_75%)] pointer-events-none"></div>
+              <div class="absolute bottom-4 left-4 text-xs text-fg-subtle font-mono pointer-events-none">Explore the field</div>
+            </div>
+          </div>
+          <div id="skillsContent" class="skills-content">
+            <div class="skills-categories" id="skillsCategories">
+              <!-- Generated by JS -->
+            </div>
+            <div class="glass-card rounded-2xl p-6 mt-6" id="skillsDetail">
+              <!-- Generated by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section certifications">
+      <div class="section-inner">
+        <div id="certContent">
+          <span class="section-label">08 / Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="text-fg-muted max-w-2xl mb-10">Verified credentials and certificates of completion will appear here once earned and shared.</p>
+        </div>
+        <div class="cert-empty" aria-live="polite">
+          <div class="rounded-2xl border border-dashed border-white/10 bg-surface/60 p-12 text-center">
+            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-green/10 text-green mb-4"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="14" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><path d="M11 14v5h6"/><path d="M14 3v5h6"/><path d="M7 14h4"/></svg></div>
+            <p class="text-fg">Certificate assets will be added here once they are available. This UI is ready to display real certificates.</p>
+            <p class="text-sm text-fg-subtle mt-2">Certificates are added once they are completed and the assets are provided.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="section cv">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-label">06 / CV</span>
+          <h2 class="section-title">Curriculum Vitae</h2>
+          <p class="text-fg-muted max-w-2xl mt-3">A printable overview of education, skills, projects, and focus areas.</p>
+        </div>
+        <div class="cv-grid">
+          <div class="glass-card rounded-2xl p-6 sm:p-8 cv-main">
+            <div class="cv-header-grid">
+              <div>
+                <h3 class="text-xl font-semibold text-fg">Kihara Jimmy Chege</h3>
+                <p class="text-sm text-green mt-1">Software Engineer &amp; Cybersecurity Specialist</p>
+                <p class="text-sm text-fg-subtle mt-1">Nairobi, Kenya</p>
+              </div>
+              <div class="sm:text-right text-sm text-fg-muted space-y-1">
+                <p>Zetech University — BSc Software Engineering</p>
+                <p>Expected graduation: 2026</p>
+              </div>
+            </div>
+            <div class="mt-6">
+              <h4 class="text-sm font-semibold text-fg mb-2">Professional Summary</h4>
+              <p class="text-sm text-fg-subtle leading-relaxed">Practical software engineering student with hands-on experience building and testing full-stack web applications, REST APIs and database-driven systems. Strong experience with C#/.NET, JavaScript/React, Python/FastAPI, PostgreSQL/MySQL and modern development tooling, with a growing specialization in cybersecurity, secure development and vulnerability research.</p>
+            </div>
+            <div class="mt-6">
+              <h4 class="text-sm font-semibold text-fg mb-2">Core Skills</h4>
+              <p class="text-sm text-fg-muted">C#, JavaScript, Python, SQL, React, ASP.NET Core, .NET, FastAPI, Node.js, Express.js, REST APIs, PostgreSQL, MySQL, MongoDB, Redis, Prisma, Entity Framework Core, Git, GitHub, Cybersecurity, Web Security, API Security, SAST, DAST.</p>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="cv.html" download class="btn btn-default btn-lg"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download CV</a>
+              <button class="btn btn-outline btn-lg" id="cvPreviewBtn"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Preview</button>
+              <a href="https://github.com/chege-5" target="_blank" rel="noreferrer" class="btn btn-ghost btn-default">GitHub Profile</a>
+            </div>
+          </div>
+          <div class="cv-sidebar space-y-4">
+            <div class="glass-card rounded-2xl p-6">
+              <h4 class="text-sm font-semibold text-fg mb-2">Quick facts</h4>
+              <ul class="text-sm text-fg-muted space-y-2">
+                <li class="flex justify-between"><span>Education</span><span class="text-fg">BSc — 4th Year</span></li>
+                <li class="flex justify-between"><span>Focus</span><span class="text-fg">Security + Full-stack</span></li>
+                <li class="flex justify-between"><span>Location</span><span class="text-fg">Nairobi</span></li>
+                <li class="flex justify-between"><span>Availability</span><span class="text-green">Open</span></li>
+              </ul>
+            </div>
+            <div class="glass-card rounded-2xl p-6">
+              <h4 class="text-sm font-semibold text-fg mb-2">Why hire me</h4>
+              <p class="text-sm text-fg-muted leading-relaxed">I combine engineering discipline with a security mindset — building systems that are correct, maintainable, and resilient by design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section experience">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-label">04 / Journey</span>
+          <h2 class="section-title">Milestones</h2>
+          <p class="text-fg-subtle max-w-2xl mt-3">The path that shaped how I build, break, and secure systems.</p>
+        </div>
+        <ul class="timeline" role="list">
+          <li class="timeline-item">
+            <article class="timeline-card">
+              <span class="absolute left-0 top-1.5 h-4 w-4 rounded-full border-2 bg-bg border-green shadow-[0_0_12px_rgba(0,255,136,0.5)]" aria-hidden="true"></span>
+              <h3 class="text-lg font-semibold text-fg">Software Engineering Education</h3>
+              <p class="text-sm text-green mt-0.5">Zetech University</p>
+              <p class="text-xs text-fg-subtle uppercase tracking-wider mt-1">2022 — Current</p>
+              <p class="text-sm text-fg-muted mt-2 max-w-2xl leading-relaxed">Bachelor of Science in Software Engineering with a focus on systems design, algorithms, and secure development.</p>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <article class="timeline-card">
+              <span class="absolute left-0 top-1.5 h-4 w-4 rounded-full border-2 bg-bg border-green/40" aria-hidden="true"></span>
+              <h3 class="text-lg font-semibold text-fg">Full-Stack Development</h3>
+              <p class="text-xs text-fg-subtle uppercase tracking-wider mt-1">2024 — Ongoing</p>
+              <p class="text-sm text-fg-muted mt-2 max-w-2xl leading-relaxed">Building end-to-end applications with React, C#/.NET, Node.js, and relational and document databases.</p>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <article class="timeline-card">
+              <span class="absolute left-0 top-1.5 h-4 w-4 rounded-full border-2 bg-bg border-green/40" aria-hidden="true"></span>
+              <h3 class="text-lg font-semibold text-fg">C# / .NET Engineering</h3>
+              <p class="text-xs text-fg-subtle uppercase tracking-wider mt-1">2024 — Ongoing</p>
+              <p class="text-sm text-fg-muted mt-2 max-w-2xl leading-relaxed">Developing enterprise-grade APIs and services with ASP.NET Core, Entity Framework Core, and REST design.</p>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <article class="timeline-card">
+              <span class="absolute left-0 top-1.5 h-4 w-4 rounded-full border-2 bg-bg border-green/40" aria-hidden="true"></span>
+              <h3 class="text-lg font-semibold text-fg">React Frontend Architecture</h3>
+              <p class="text-xs text-fg-subtle uppercase tracking-wider mt-1">2024 — Ongoing</p>
+              <p class="text-sm text-fg-muted mt-2 max-w-2xl leading-relaxed">Crafting performant, accessible interfaces with React, modern CSS, and component-driven architecture.</p>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <article class="timeline-card">
+              <span class="absolute left-0 top-1.5 h-4 w-4 rounded-full border-2 bg-bg border-green/40" aria-hidden="true"></span>
+              <h3 class="text-lg font-semibold text-fg">API Engineering</h3>
+              <p class="text-xs text-fg-subtle uppercase tracking-wider mt-1">2024 — Ongoing</p>
+              <p class="text-sm text-fg-muted mt-2 max-w-2xl leading-relaxed">Designing RESTful APIs, authentication flows, and integration layers across multiple projects.</p>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <article class="timeline-card">
+              <span class="absolute left-0 top-1.5 h-4 w-4 rounded-full border-2 bg-bg border-green/40" aria-hidden="true"></span>
+              <h3 class="text-lg font-semibold text-fg">Cybersecurity Exploration</h3>
+              <p class="text-xs text-fg-subtle uppercase tracking-wider mt-1">2024 — Ongoing</p>
+              <p class="text-sm text-fg-muted mt-2 max-w-2xl leading-relaxed">Studying web security, API security, SAST/DAST, CVE/CWE research, and secure software development.</p>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <article class="timeline-card">
+              <span class="absolute left-0 top-1.5 h-4 w-4 rounded-full border-2 bg-bg border-green" aria-hidden="true"></span>
+              <h3 class="text-lg font-semibold text-fg">VulNexus</h3>
+              <p class="text-xs text-fg-subtle uppercase tracking-wider mt-1">2026</p>
+              <p class="text-sm text-fg-muted mt-2 max-w-2xl leading-relaxed">Building a hybrid AI-based cryptographic auditing system combining scanning, intelligence, and mitigation guidance.</p>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <article class="timeline-card">
+              <span class="absolute left-0 top-1.5 h-4 w-4 rounded-full border-2 bg-bg border-green/40" aria-hidden="true"></span>
+              <h3 class="text-lg font-semibold text-fg">Security Research</h3>
+              <p class="text-xs text-fg-subtle uppercase tracking-wider mt-1">2024 — Ongoing</p>
+              <p class="text-sm text-fg-muted mt-2 max-w-2xl leading-relaxed">Investigating attack surfaces, authentication flows, and vulnerability disclosure practices.</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="section-inner">
+        <div class="contact-grid">
+          <div id="contactHeader">
+            <span class="section-label">07 / Contact</span>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="text-fg-muted leading-relaxed mb-8">Open for collaborations, freelance work, and interesting conversations.</p>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-center gap-3"><span class="p-2 rounded-lg bg-green/10 text-green"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span><a href="https://github.com/chege-5" target="_blank" rel="noreferrer" class="text-fg hover:text-green transition-colors link-underline">GitHub</a></li>
+              <li class="flex items-center gap-3"><span class="p-2 rounded-lg bg-green/10 text-green"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span><a href="https://linkedin.com/in/kihara-chege" target="_blank" rel="noreferrer" class="text-fg hover:text-green transition-colors link-underline">LinkedIn</a></li>
+              <li class="flex items-center gap-3"><span class="p-2 rounded-lg bg-green/10 text-green"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span><a href="mailto:jimmykihara05@gmail.com" class="text-fg hover:text-green transition-colors link-underline">Email</a></li>
+              <li class="flex items-center gap-3"><span class="p-2 rounded-lg bg-green/10 text-green"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><a href="https://wa.me/254742195920" target="_blank" rel="noreferrer" class="text-fg hover:text-green transition-colors link-underline">WhatsApp</a></li>
+            </ul>
+          </div>
+          <div class="glass-card rounded-2xl p-6 sm:p-8" id="contactForm">
+            <form id="contactFormElement" noValidate class="space-y-5">
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-fg-muted mb-1.5">Name</label>
+                  <input type="text" id="name" name="name" class="input-field" placeholder="Your name" aria-invalid="false" aria-describedby="name-error">
+                  <p id="name-error" class="mt-1 text-xs text-red-300 hidden" role="alert">Name is required</p>
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-fg-muted mb-1.5">Email</label>
+                  <input type="email" id="email" name="email" class="input-field" placeholder="you@example.com" aria-invalid="false" aria-describedby="email-error">
+                  <p id="email-error" class="mt-1 text-xs text-red-300 hidden" role="alert">Enter a valid email</p>
+                </div>
+              </div>
+              <div>
+                <label for="subject" class="block text-sm font-medium text-fg-muted mb-1.5">Subject</label>
+                <input type="text" id="subject" name="subject" class="input-field" placeholder="How can I help?">
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-fg-muted mb-1.5">Message</label>
+                <textarea id="message" name="message" class="input-field textarea" placeholder="Tell me about your project or question..."></textarea>
+              </div>
+              <div id="successMsg" class="hidden flex items-center gap-2 rounded-xl border border-green/20 bg-green/10 px-4 py-3 text-green" role="status">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Message sent. I will get back to you soon.
+              </div>
+              <div id="errorMsg" class="hidden flex items-center gap-2 rounded-xl border border-red-500/20 bg-red-500/10 px-4 py-3 text-red-300" role="alert">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Something went wrong. Please try again.
+              </div>
+              <button type="submit" class="btn btn-default btn-lg w-full sm:w-auto" id="submitBtn">
+                <span id="submitContent"><svg class="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Send Message</span>
+                <span id="submitLoading" class="hidden">Sending...</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Dialog -->
+  <div id="projectDialog" class="dialog-overlay" role="dialog" aria-modal="true" aria-label="Project details" aria-hidden="true">
+    <div class="dialog-content dialog-project">
+      <div class="dialog-header">
+        <h2 class="dialog-title" id="projectDialogTitle">Project Details</h2>
+        <button class="dialog-close" aria-label="Close project">&times;</button>
+      </div>
+      <div id="projectDialogContent"></div>
+    </div>
+  </div>
+
+  <!-- CV Preview Dialog -->
+  <div id="cvPreviewDialog" class="dialog-overlay" role="dialog" aria-modal="true" aria-label="CV Preview" aria-hidden="true">
+    <div class="dialog-content dialog-cv-preview">
+      <div class="dialog-header px-6 pt-6 pb-3 flex-row items-center justify-between">
+        <div>
+          <h2 class="dialog-title">CV Preview</h2>
+          <p class="dialog-description">Kihara Jimmy Chege — printable overview</p>
+        </div>
+        <a href="cv.html" target="_blank" rel="noreferrer" class="text-sm text-green hover:underline flex items-center gap-1">Open full page <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="13" x2="6" y2="13"/><line x1="18" y1="6" x2="6" y2="6"/><polyline points="24 12 12 24 0 12"/></svg></a>
+      </div>
+      <div class="px-2 pb-2 text-center py-12">
+        <svg class="h-12 w-12 text-fg-muted mx-auto mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <p class="text-fg mb-2">CV Preview</p>
+        <p class="text-sm text-fg-subtle mb-4">Open the full CV page for a detailed view.</p>
+        <a href="cv.html" target="_blank" rel="noreferrer" class="btn btn-default btn-default"><svg class="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="13" x2="6" y2="13"/><line x1="18" y1="6" x2="6" y2="6"/><polyline points="24 12 12 24 0 12"/></svg> Open CV</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Built by Kihara Chege • 2026</p>
+      <div class="footer-links">
+        <a href="https://github.com/chege-5" target="_blank" rel="noreferrer" class="text-fg-muted hover:text-green transition-colors">GitHub</a>
+        <a href="https://linkedin.com/in/kihara-chege" target="_blank" rel="noreferrer" class="text-fg-muted hover:text-green transition-colors">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
